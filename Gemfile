@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 3.9"
+gem "jekyll"
 gem "jekyll-coffeescript"
 gem "jekyll-default-layout"
 gem "jekyll-gist"
