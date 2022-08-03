@@ -8,12 +8,14 @@ Be sure to configure your GitHub repo to use GitHub Pages and point it to the ma
 
 ## Getting started
 
-1. Download the latest release of this repo from GitHub
+1. Download
+   the [Source code for the latest release](https://github.com/adamlabadorf/jekyll_course_website_template/releases/tag/1.0)
+   of this repo from GitHub
 2. Expand the archive on your computer, and rename it to something like what your website will be called,
    e.g. `bf500_course_website`
 3. Initialize the repo as a git repo using your favorite git client, e.g. `git init .` from inside the new directory
 4. Create a new repo on GitHub for your course site, and follow the instructions to push your local repo to GitHub
-5. Enable Pages on your GitHub repo from the Settings page
+5. [Enable Pages on your GitHub repo](https://docs.github.com/en/pages/quickstart) from the Settings page
 6. Customize the content of your site following the instructions below
 
 ## Initial Configuration
