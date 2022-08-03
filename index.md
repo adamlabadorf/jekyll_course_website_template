@@ -2,98 +2,56 @@
 permalink: /
 ---
 
-# BF/BI510: Institutional Racism in Health and Science
+{% include_relative README.md %}
 
+# Course Name
 
-Historically, scientific theories and methodologies have been inappropriately,
-and sometimes fraudulently, employed to provide justification for establishing
-and maintaining social, economic, and racial hierarchies, resulting in
-centuries of dehumanizing and unethical practices toward certain groups,
-especially against Black and Indigenous People of Color (BIPOC).
-Unfortunately, many of these pernicious ideas persist, such that they hinder
-opportunities of BIPOC in Science and exacerbate their health outcomes. 
+Course description
 
-This course traces the historical roots of racism in science through to its
-modern manifestations, examines the harmful consequences on victims' health
-outcomes, and presents ideas, approaches, and practices to ameliorate and
-eradicate the presence of racism in our institutions.
+**Semester:** Spring 2196
 
-**Semester:** Spring 2022
+**Location:** Room number
 
-**Location:** BRB 115
-
-**Time:** Tues/Thursday 12.30pm-3.15pm EST
+**Day/Time:** Day/Time
 
 <a id="contents"></a>Contents:
 * <a href="#instructors">Instructors</a>
 * <a href="#objectives">Course Objectives</a>
 * <a href="#prerequisites">Prerequisites</a>
 * <a href="#schedule">Schedule</a>
-* <a href="#the-instrument">The Instrument</a>
 * <a href="#grading">Grading</a>
-* <a href="#resources">Resources</a>
-* <a href="library.html">Course Library</a>
+* <a href="#policies">Course Policies</a>
+* <a href="#resources">Student Resources</a>
 
 <a id="instructors">
+
 ## Instructors <a class="tiny-link" href="#">Top</a>
 
-### Lead Instructor
-Melisa Osborne, Ph.D. (she/her)
+**Instructor:** name
 
-Research Scientist and Segrè Lab Manager, Bioinformatics Program
-
-Research Assistant Professor, Graduate Program in Bioinformatics
-
-* *Office Location:* Segre Lab (LSEB Room 331)
+* *Office Location:*
 * *Office Hours:*
-Tuesday after class until 4pm
-Weds 11AM-noon
-(Concurrent avaibility in zoom classroom for office hours)
 Appointments always welcome
 
-* *Office Phone:* 617-353-0490 (needed for 3rd floor LSEB access)
-* *Email:* melosbor at BU dot edu
-* *Twitter:* @MelisaLKO
+* *Office Phone:* 
+* *Email:* 
+* *Twitter:* 
 
-### Teaching Fellow
-NONE for Spring 2022
-* *Office Location:*
-*  *Email:*
+**Learning/Teaching Assistant:** name
 
-### Co-instructors
+**Office hours:**
 
-* Felicity Crawford (she/her)
-* Adam Labadorf (he/him) - labadorf at BU dot edu
-* TJ McKenna (he/him)
-* Theresa Rueger (she/her)
-* Fred Wasserman (he/him)
+**Contact info:**
 
 <a id="objectives">
+
 ## Course Objectives <a class="tiny-link" href="#">Top</a>
 
-The pedagogical goal of this course is to develop student competencies in
-discriminating between fact-based conclusions and unsupported pseudoscience and
-constructing empirical knowledge for themselves.  We will focus on the
-empirical process behind interrogating and dismantling disinformation and
-pseudoscience in the specific context of racism.  Students will learn the
-skills needed at each step of inquiry and walk through a stepwise process:
-
-1. learning about the biological background on scientific topics
-2. learning to critically analyze data and critique conclusions in primary sources
-3. learning to engage with one another and talk to others about their critical analyses
-4. learning to apply this critical reasoning to other topics outside of race.
-
-Beyond racism, scientific reasoning has been and still is used to form the
-basis for discrimination against many different groups.  Beyond the context of
-this course, students will gain the skills needed to apply this same process to
-look at issues of ableism, sexism, and gender discrimination.  BF/BI510 will
-prepare students to look at the scientific and popular literature and dismantle
-systemic inequity from its foundations. 
+Short description of course objectives
 
 ### Course Principles and Classroom guidelines
 
 In this class:
-* We will cover uncomfortable ideas and information in this class
 * Feeling discomfort is normal - it is a sign of challenge and growth
 * It’s ok to make mistakes, so long as we are dedicated to becoming better
 * This room is a space for respectful dissent
@@ -114,117 +72,26 @@ something that hurts someone else, even if it is unintended.
 <a id="prerequisites">
 ## Prerequisites <a class="tiny-link" href="#">Top</a>
 
-**Graduate Student Prerequisites:** MSc./PhD. program standing in
-Bioinformatics, or MSc./PhD. program standing in Biology, or MSc./M.A. standing
-in BU Wheelock, or consent of instructor.
-
-**Undergraduate Prerequisites:** CAS BI 107/108 OR CAS BI 126 and senior
-standing, or consent of instructor.
+list of prerequisites, if any
 
 <a id="schedule">
 ## Course Schedule <a class="tiny-link" href="#">Top</a>
 
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Day</th>
-    <th>Lec #</th>
-    <th>Topic</th>
-    <th>Assignment</th>
-    <th>Instructor</th>
-  </tr>
-{% for lec in site.data.schedule %}
-
-  {% if lec.Lec %}
-  <tr class="lec">
-  {% else %}
-  <tr class="nolec">
-  {% endif %}
-    <td>{{ lec.Date }}</td>
-    <td>{{ lec.Day }}</td>
-    <td>{{ lec.Lec }}</td>
-    <td>
-      {% if lec.Lec %}
-        {% if lec["Topic Slide Link"] %}
-          <a href="lectures/{{ lec["Topic Tag"] }}.html">{{ lec.Topic }}</a>
-        {% else %}
-          {{ lec.Topic }}
-        {% endif %}
-      {% else %}
-          {{ lec.Topic }}
-      {% endif %}
-    </td>
-    <td>
-        {% if lec.Assignment %}
-            <a href="assignments/{{ lec["Assignment Tag"] }}.html">{{ lec.Assignment }}</a>
-        {% endif %}
-    </td>
-    <td>{{ lec.Instructor }}</td>
-  </tr>
-{% endfor %}
-</table>
-
-<a id="the-instrument">
-## The Instrument <a class="tiny-link" href="#">Top</a>
-
-![The Instrument](assets/images/the_instrument.png)
-
-“The Instrument” is a tool we are developing in this class to help identify
-hidden biases in a text. It is a structured approach to reading a text that has
-the following phases:
-
-1. [**Annotate**](assignments/annotate.html) -  label key words, phrases, or sentences with a controlled set
-   of hashtags
-
-2. [**Analyze**](assignments/analyze.html) - answer a set of short answer questions designed to identify key
-   aspects of the text
-
-3. [**Synthesize**](assignments/synthesis.html) - write a short narrative reflection about the article guided
-   by a set of scaffolding questions
-
-We will apply The Instrument to readings throughout the course. A more detailed
-description of The Instrument is found [here](the_instrument.html).
+{% include_relative schedule.md %}
 
 <a id="grading">
+
 ## Grading <a class="tiny-link" href="#">Top</a>
 
-**Weekly annotations (50% of grade):** Students will submit applications of the
-instrument on weekly readings that will be used to assess participation and
-engagement.
-
-**Three case study reflections (20% of grade):** There are three case studies
-assigned to readings throughout the semester.
-
-**Peer review activities (10% of grade):** Students will review their peers’
-submissions for parts of the final project and learn how to provide
-constructive feedback on a written abstracts. 
-
-**Final Project (20% of grade):**  Each student will complete a final project
-and report (~5 pages) about an aspect of systemic racism in health and science
-of their own choosing.  The Final Project Assignment will be posted on the
-course website in the first weeks of class, and class time will be dedicated mid-semester to discussing
-project ideas and expectations.  The assignment will involve
-creating a short presentation (possible formats include a podcast, narrated
-poster, or YouTube video) and submission of a written report detailing the
-motivation and logic and research behind your project of choice.  Presentations
-will be shared with the class (exact details will depend on formats preferred
-by students), and a written report will be due by final exam time.  Reports
-will be submitted via the Perusall site.
+Grading policy
 
 <a id="required-texts">
 ## Required Texts <a class="tiny-link" href="#">Top</a>
 
-Course texts are available for purchase via the Boston University
-bookstore and are on reserve at Mugar Library.  Scanned PDFs of chapters are also available through Perusall.
-
-“[Superior: The Return of Race Science](https://www.goodreads.com/book/show/42042093-superior)”
-by Angela Saini. Beacon Press, Boston, MA 2019. ISBN-13: 978-0-8070-2842-1
-
-This course will use open access primary research articles as the for many
-required readings. PDFs of all articles will be made available on the course
-Perusall website.
+Course texts
 
 <a id="resources">
+
 ## Resources/Support/How to Succeed in This Course <a class="tiny-link" href="#">Top</a>
 
 ### Office Hours
@@ -263,8 +130,8 @@ ones; but you are welcome to tell me and I will listen. Even if I can’t help
 you directly, it is likely that I know someone who can. If you need help or
 more information, please ask, and I will work with you.
 
-<a id="policies">
-## Community of Learning: Class and University Policies <a class="tiny-link" href="#">Top</a>
+<a id="policies"></a>
+## Class and University Policies <a class="tiny-link" href="#">Top</a>
 
 ### Diversity, Inclusion, Anti-racism
 
@@ -300,7 +167,7 @@ policy) so that accommodations can be made.
 ### Assignment Completion & Late Work
 
 Assignment can be submitted on their
-scheduled due dates by 11.59.59 EST via Perusalldropboxes or alternately they
+scheduled due dates by 11.59.59 EST via Perusall/dropboxes or alternately they
 may be emailed to melosbor@bu.edu. Assessment and feedback will be provided
 via Perusall grading function. A late penalty of -10% per day will be
 assessed, though deadline extensions are available on a case by case basis (the
